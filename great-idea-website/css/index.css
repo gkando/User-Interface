@@ -64,3 +64,107 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
+.logo {
+  display: inline-block;
+  margin-left: 0%;
+  width: 100px;
+}
+
+.logo-sm {
+  object-fit: cover;
+  object-position: 100% 0;
+  width: 25px;
+  height: 36px;
+  display: inline-block;
+}
+
+.sm-logo-container{
+  width: 30px;
+  margin: 2px;
+  display: inline-block;
+  float:left;
+  filter: invert(100%);
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+h1 {
+  text-align: center;
+  padding: 12px;
+  font-size: 125%;
+}
+
+.features { 
+  padding: 10px;
+  margin: 2px;
+  width: 49%;
+  height: auto;
+  text-align: justify;
+  display: inline-block;
+}
+
+.container {
+  position: relative;
+  width: 70%;
+  margin-left: 10px;
+  display: block;
+}
+
+.image {
+  display: inline-block;
+  width: 49%;
+  height: auto;
+  opacity: 0.9;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 49%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+  display: inline-block;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
